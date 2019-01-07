@@ -415,8 +415,8 @@ ssh [os-user]@[master-ip] sudo ls /etc/kubernetes/ssl/
 ```
 4. Get `admin`'s certificates and keys:
 ```
-ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/admin-[cluster_name]-k8s-master-1-key.pem > admin-key.pem
-ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/admin-[cluster_name]-k8s-master-1.pem > admin.pem
+ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/apiserver-kubelet-client.crt > admin-key.pem
+ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/apiserver-kubelet-client.key > admin.pem
 ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/ca.pem > ca.pem
 ```
 5. Configure kubectl:
