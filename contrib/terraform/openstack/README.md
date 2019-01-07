@@ -417,7 +417,7 @@ ssh [os-user]@[master-ip] sudo ls /etc/kubernetes/ssl/
 ```
 ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/apiserver-kubelet-client.key > admin-key.pem
 ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/apiserver-kubelet-client.crt > admin.pem
-ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/ca.pem > ca.pem
+ssh [os-user]@[master-ip] sudo cat /etc/kubernetes/ssl/ca.crt > ca.pem
 ```
 5. Configure kubectl:
 ```ShellSession
